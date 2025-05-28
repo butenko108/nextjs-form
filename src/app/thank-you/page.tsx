@@ -2,8 +2,9 @@
 
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
+import { Suspense } from "react";
 
-export default function ThankYouPage() {
+function ThankYouContent() {
   const searchParams = useSearchParams();
   const name = searchParams.get("name");
   const email = searchParams.get("email");
@@ -47,5 +48,19 @@ export default function ThankYouPage() {
         </div>
       </div>
     </main>
+  );
+}
+
+export default function ThankYouPage() {
+  return (
+    <Suspense
+      fallback={
+        <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+          Loading...
+        </div>
+      }
+    >
+      <ThankYouContent />
+    </Suspense>
   );
 }

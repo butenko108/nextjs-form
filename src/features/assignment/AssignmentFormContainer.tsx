@@ -4,9 +4,6 @@ export default async function AssignmentFormContainer() {
   try {
     const res = await fetch(
       "https://tools.qa.ale.ai/api/tools/candidates/levels",
-      {
-        next: { revalidate: 0 },
-      },
     );
 
     if (!res.ok) {
