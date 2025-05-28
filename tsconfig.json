@@ -21,13 +21,7 @@
     "baseUrl": "src",
     "paths": {
       "app/*": ["app/*"],
-      "assets/*": ["assets/*"],
-      "entities/*": ["entities/*"],
       "features/*": ["features/*"],
-      "pages/*": ["pages/*"],
-      "shared/*": ["shared/*"],
-      "tests/*": ["tests/*"],
-      "components/*": ["components/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
