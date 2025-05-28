@@ -26,7 +26,8 @@
       "features/*": ["features/*"],
       "pages/*": ["pages/*"],
       "shared/*": ["shared/*"],
-      "tests/*": ["tests/*"]
+      "tests/*": ["tests/*"],
+      "components/*": ["components/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
