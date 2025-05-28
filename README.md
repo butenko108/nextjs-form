@@ -18,21 +18,6 @@
 1. Встановити залежності: `npm i`
 2. Запустити додаток: `npm run dev`
 
-## Структура
-src/
-├── app/
-│   ├── page.tsx                  # Home page
-│   └── thank-you/page.tsx        # Thank you page
-├── features/
-│   └── assignment/
-│       ├── AssignmentFormContainer.tsx  # Server Component
-│       ├── AssignmentForm.tsx           # Client Component
-│       ├── FormInput.tsx                # Reusable input component
-│       ├── FormTextarea.tsx             # Reusable textarea component
-│       ├── FormSelect.tsx               # Reusable select component
-│       └── schemas.ts                   # Schemas definitions
-│       └── types.ts                     # Type definitions
-
 ## Функціональність
 Головна сторінка (/) з формою відправки завдання:
 - Поля: ім'я, email, опис завдання, посилання на репозиторій, рівень кандидата.
